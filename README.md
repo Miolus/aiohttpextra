@@ -1,6 +1,4 @@
 # aiohttpextra
 Launch multiple aiohttp apps in one python file!
 
-await aiohttpextra.start(app, host=STRING, port=INTEGER)
-
-BETA
+Use this to launch multiple aiohttp clients. Useful for discordpy with another aiohttp app.
