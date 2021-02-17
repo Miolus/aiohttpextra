@@ -5,5 +5,5 @@ async def start_server(app, address='localhost', port=80):
     runners.append(runner)
     await runner.setup()
     site = aiohttp.web.TCPSite(runner, address, port)
-    print('An app is starting...')
+    print(f'An new aiohttp app is starting and listening on {address}:{port}')
     await site.start()
