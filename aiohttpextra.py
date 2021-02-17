@@ -1,5 +1,7 @@
 import aiohttp
 
+runners = []
+
 async def start_server(app, address='localhost', port=80):
     runner = aiohttp.web.AppRunner(app)
     runners.append(runner)
